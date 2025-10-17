@@ -10,6 +10,18 @@
     <h1>{{ message }}</h1>
     <p>این صفحه توسط Jinja2 رندر شده است.</p>
 
+    <h2>ثبت‌نام ساده</h2>
+    <form method="POST" action="/">
+        <label for="first_name">نام:</label><br>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+        
+        <label for="last_name">نام خانوادگی:</label><br>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+        
+        <input type="submit" value="ثبت در دیتابیس">
+    </form>
+    <hr>
+    
     <img src="{{ media('images/test_image.jpg') }}" alt="عکس تستی">
 
     <script src="{{ static('js/script.js') }}"></script>
