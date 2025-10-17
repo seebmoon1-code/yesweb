@@ -1,14 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ static('css/style.css') }}"> 
 </head>
 <body>
     <h1>{{ message }}</h1>
     <p>این صفحه توسط Jinja2 رندر شده است.</p>
+
+    <img src="{{ media('images/test_image.jpg') }}" alt="عکس تستی">
+
+    <script src="{{ static('js/script.js') }}"></script>
+
     <a href="/about">درباره ما</a>
 </body>
 </html>
